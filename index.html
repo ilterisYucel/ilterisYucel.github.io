@@ -446,17 +446,18 @@
             cell.className = "w3-third w3-container w3-margin-bottom";
             cell.id = obj.name + "-" + obj.tags.join("-");
             container.appendChild(cell);
-
-            const img = document.createElement("img");
-            img.src = obj.image;
-            img.alt = obj.name + "-image";
-            img.style.width = "100%";
-            img.style.height = "auto";
-            img.className = "w3-hover-opacity";
-            img.onclick = () => {
-                openLargeImage(obj.image);
+            if (obj.mediaType === "image") {
+                const img = document.createElement("img");
+                img.src = obj.media;
+                img.alt = obj.name + "-image";
+                img.style.width = "100%";
+                img.style.height = "auto";
+                img.className = "w3-hover-opacity";
+                img.onclick = () => {
+                    openLargeImage(obj.media);
+                }
+                cell.appendChild(img);
             }
-            cell.appendChild(img);
 
             const inner = document.createElement("div");
             inner.className = "w3-container w3-white";

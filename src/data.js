@@ -228,14 +228,16 @@ const project = [
     name: "Appollon",
     description:
       "Apollon is a gamification application for museums, art galleries, etc. to enrich the visitor experience. ",
-    image: "./assets/img/appollon.png",
+    mediaType: "image",
+    media: "./assets/img/appollon.png",
     tags: ["mobile"],
   },
   {
     name: "Shapetris",
     description:
       "Shapetris is a puzzle game that is designed to create shapes in a 10X10 area using tetris blocks. ",
-    image: "./assets/img/shapetris.png",
+    mediaType: "image",
+    media: "./assets/img/shapetris.png",
     tags: ["mobile", "game", "web"],
   },
 ];
