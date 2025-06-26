@@ -100,6 +100,69 @@
                         <div id="lang-selection" class="w3-bar"></div>
                         <br>
                         <p class="w3-large w3-text-theme"><b><i
+                                    class="fa fa-book fa-fw w3-margin-right w3-text-teal"></i>Tools/Platforms/Services</b>
+                        </p>
+                        <p>Docker</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">
+                                70%</div>
+                        </div>
+                        <p>Amazon Web Services</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">
+                                70%</div>
+                        </div>
+                        <p>Firebase</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">
+                                60%</div>
+                        </div>
+                        <p>Grafana</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">
+                                65%</div>
+                        </div>
+                        <p>Telegraf</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">
+                                75%</div>
+                        </div>
+                        <br>
+                        <p class="w3-large w3-text-theme"><b><i
+                                    class="fa fa-database fa-fw w3-margin-right w3-text-teal"></i>Database</b>
+                        </p>
+                        <p>PostgreSQL</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">
+                                75%</div>
+                        </div>
+                        <p>MySQL</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">
+                                75%</div>
+                        </div>
+                        <p>SQLite</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+                                80%</div>
+                        </div>
+                        <p>InfluxDB</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">
+                                65%</div>
+                        </div>
+                        <p>Timescale</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">
+                                65%</div>
+                        </div>
+                        <p>PostGIS</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">
+                                65%</div>
+                        </div>
+                        <br>
+                        <p class="w3-large w3-text-theme"><b><i
                                     class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
                         <p>Turkish</p>
                         <div class="w3-light-grey w3-round-xlarge w3-small">
@@ -125,75 +188,23 @@
                             class="fa fa-folder-open-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Portfolio
                     </h2>
                     <div class="w3-container">
-                        <div class="w3-section w3-bottombar w3-padding-16">
-                            <button class="w3-button w3-black">ALL</button>
-                            <button class="w3-button w3-white"><i class="fa fa-chrome w3-margin-right"></i>Web</button>
-                            <button class="w3-button w3-white w3-hide-small"><i
-                                    class="fa fa-mobile w3-margin-right"></i>Mobile</button>
-                            <button class="w3-button w3-white w3-hide-small"><i
-                                    class="fa fa-desktop w3-margin-right"></i>Desktop</button>
-                            <button class="w3-button w3-white w3-hide-small"><i
-                                    class="fa fa-gamepad w3-margin-right"></i>Game</button>
-                            <button class="w3-button w3-white w3-hide-small"><i
-                                    class="fa fa-book w3-margin-right"></i>Library</button>
+                        <div class="w3-section w3-bottombar w3-padding-16" id="filter-container">
+                            <button class="w3-button w3-black" onclick="changePortfolio(event, 'all')"
+                                id="all-filter">ALL</button>
+                            <button class="w3-button w3-white" onclick="changePortfolio(event, 'web')"
+                                id="web-filter"><i class="fa fa-chrome w3-margin-right"></i>Web</button>
+                            <button class="w3-button w3-white w3-hide-small" onclick="changePortfolio(event, 'mobile')"
+                                id="mobile-filter"><i class="fa fa-mobile w3-margin-right"></i>Mobile</button>
+                            <button class="w3-button w3-white w3-hide-small" onclick="changePortfolio(event, 'desktop')"
+                                id="desktop-filter"><i class="fa fa-desktop w3-margin-right"></i>Desktop</button>
+                            <button class="w3-button w3-white w3-hide-small" onclick="changePortfolio(event, 'game')"
+                                id="game-filter"><i class="fa fa-gamepad w3-margin-right"></i>Game</button>
+                            <button class="w3-button w3-white w3-hide-small" onclick="changePortfolio(event, 'library')"
+                                id="library-filter"><i class="fa fa-book w3-margin-right"></i>Library</button>
                         </div>
                     </div>
                     <!-- First Photo Grid-->
-                    <div class="w3-row-padding">
-                        <div class="w3-third w3-container w3-margin-bottom">
-                            <img src="/w3images/mountains.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-                            <div class="w3-container w3-white">
-                                <p><b>Lorem Ipsum</b></p>
-                                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
-                                    vitae,
-                                    ultricies congue gravida diam non fringilla.</p>
-                            </div>
-                        </div>
-                        <div class="w3-third w3-container w3-margin-bottom">
-                            <img src="/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-                            <div class="w3-container w3-white">
-                                <p><b>Lorem Ipsum</b></p>
-                                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
-                                    vitae,
-                                    ultricies congue gravida diam non fringilla.</p>
-                            </div>
-                        </div>
-                        <div class="w3-third w3-container w3-margin-bottom">
-                            <img src="/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-                            <div class="w3-container w3-white">
-                                <p><b>Lorem Ipsum</b></p>
-                                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
-                                    vitae,
-                                    ultricies congue gravida diam non fringilla.</p>
-                            </div>
-                        </div>
-                        <div class="w3-third w3-container w3-margin-bottom">
-                            <img src="/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-                            <div class="w3-container w3-white">
-                                <p><b>Lorem Ipsum</b></p>
-                                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
-                                    vitae,
-                                    ultricies congue gravida diam non fringilla.</p>
-                            </div>
-                        </div>
-                        <div class="w3-third w3-container w3-margin-bottom">
-                            <img src="/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-                            <div class="w3-container w3-white">
-                                <p><b>Lorem Ipsum</b></p>
-                                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
-                                    vitae,
-                                    ultricies congue gravida diam non fringilla.</p>
-                            </div>
-                        </div>
-                        <div class="w3-third w3-container w3-margin-bottom">
-                            <img src="/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-                            <div class="w3-container w3-white">
-                                <p><b>Lorem Ipsum</b></p>
-                                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
-                                    vitae,
-                                    ultricies congue gravida diam non fringilla.</p>
-                            </div>
-                        </div>
+                    <div class="w3-row-padding" id="portfolio-container">
                     </div>
                 </div>
 
@@ -428,8 +439,123 @@
             })
 
         }
+        const createPortfolio = (obj) => {
+            const container = document.getElementById("portfolio-container");
+
+            const cell = document.createElement("div");
+            cell.className = "w3-third w3-container w3-margin-bottom";
+            cell.id = obj.name + "-" + obj.tags.join("-");
+            container.appendChild(cell);
+
+            const img = document.createElement("img");
+            img.src = obj.image;
+            img.alt = obj.name + "-image";
+            img.style.width = "100%";
+            img.style.height = "auto";
+            img.className = "w3-hover-opacity";
+            img.onclick = () => {
+                openLargeImage(obj.image);
+            }
+            cell.appendChild(img);
+
+            const inner = document.createElement("div");
+            inner.className = "w3-container w3-white";
+            cell.appendChild(inner);
+
+            const header = document.createElement("p");
+            header.innerHTML = "<b>" + `${obj.name.toUpperCase()}` + "</b>"
+            inner.appendChild(header);
+
+            const content = document.createElement("p");
+            content.innerHTML = obj.description;
+            inner.appendChild(content);
+        }
+
+        const changePortfolio = (evt, key) => {
+            const container = document.getElementById("portfolio-container");
+            const bContainer = document.getElementById("filter-container");
+
+            Array.from(bContainer.children).forEach(b => {
+                b.className = b.className.replace("w3-black", "w3-white");
+            })
+            evt.target.className += " w3-black";
+
+            Array.from(container.children).forEach(elem => {
+                if (key === "all") {
+                    elem.style.display = "block";
+                }
+                else if (elem.id.includes(key)) {
+                    elem.style.display = "block";
+                } else {
+                    elem.style.display = "none";
+                }
+            })
+        }
+        project.forEach(pr => {
+            createPortfolio(pr);
+        })
+
+        function openLargeImage(imgSrc) {
+            const overlay = document.createElement('div');
+            overlay.id = 'imageOverlay';
+            overlay.style.position = 'fixed';
+            overlay.style.top = '0';
+            overlay.style.left = '0';
+            overlay.style.width = '100%';
+            overlay.style.height = '100%';
+            overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+            overlay.style.display = 'flex';
+            overlay.style.justifyContent = 'center';
+            overlay.style.alignItems = 'center';
+            overlay.style.zIndex = '1000';
+            overlay.onclick = () => removeOverlay();
+
+            const modal = document.createElement('div');
+            modal.style.position = 'relative';
+            modal.style.padding = '20px';
+            modal.style.backgroundColor = '#fff';
+            modal.style.borderRadius = '8px';
+            modal.style.maxWidth = '90%';
+            modal.style.maxHeight = '90%';
+
+            const closeBtn = document.createElement('button');
+            closeBtn.textContent = '×';
+            closeBtn.style.position = 'absolute';
+            closeBtn.style.top = '16px';
+            closeBtn.style.right = '16px';
+            closeBtn.style.background = 'none';
+            closeBtn.style.border = 'none';
+            closeBtn.style.fontSize = '48px';
+            closeBtn.style.color = "white";
+            closeBtn.style.cursor = 'pointer';
+            closeBtn.onclick = () => removeOverlay();
+
+            const largeImg = document.createElement('img');
+            largeImg.src = imgSrc;
+            largeImg.style.maxWidth = '100%';
+            largeImg.style.maxHeight = '80vh';
+            largeImg.style.objectFit = 'contain';
+            largeImg.onclick = (e) => e.stopPropagation();
+
+            modal.appendChild(closeBtn);
+            modal.appendChild(largeImg);
+            overlay.appendChild(modal);
+            document.body.appendChild(overlay);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') removeOverlay();
+            });
+
+        }
+
+        function removeOverlay() {
+            const overlay = document.getElementById('imageOverlay');
+            if (overlay) {
+                document.body.removeChild(overlay);
+                document.body.style.overflow = 'auto'; // Re-enable scrolling
+            }
+        }
+
         changeLanguage("python");
-        // changeSection("python", "backend");
     </script>
 
 </body>
