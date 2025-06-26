@@ -1,12 +1,361 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
+    <title>ilteris yucel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="./src/data.js"></script>
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif
+        }
+    </style>
 </head>
 
-<body>
-	<div id="main"></div>
-	<script type="text/javascript" src="./app.js"></script>
+<body class="w3-light-grey">
+
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+
+            <!-- Left Column -->
+            <div class="w3-third">
+
+                <div class="w3-white w3-text-grey w3-card-4">
+                    <div class="w3-display-container">
+                        <img src="./assets/img/pp.jpeg" style="width:100%" alt="Avatar">
+                        <div class="w3-display-bottomleft w3-container w3-text-white">
+                            <h2>Ilteris Yucel</h2>
+                        </div>
+                    </div>
+                    <div class="w3-container">
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Computer Engineer
+                        </p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Ankara, TR</p>
+                        <p><i
+                                class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ilteris.yucel@gmail.com
+                        </p>
+                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+90 533 461 6986</p>
+                        <hr>
+
+                        <p class="w3-large"><b><i
+                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Programming
+                                Languages</b></p>
+                        <p>Python</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">85%</div>
+                        </div>
+                        <p>JavaScript/Typescript</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">
+                                <div class="w3-center w3-text-white">85%</div>
+                            </div>
+                        </div>
+                        <p>Golang</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
+                        </div>
+                        <p>C++</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
+                        </div>
+                        <p>Kotlin</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+                        </div>
+                        <p>Java</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+                        </div>
+                        <br>
+
+
+                        <p class="w3-large w3-text-theme"><b><i
+                                    class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Libraries/Frameworks</b>
+                        </p>
+                        <div id="libraries"></div>
+                        <br>
+                        <div id="section-selection" class="w3-bar"></div>
+                        <br>
+                        <div id="lang-selection" class="w3-bar"></div>
+                        <br>
+                        <p class="w3-large w3-text-theme"><b><i
+                                    class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+                        <p>Turkish</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">
+                                100%</div>
+                        </div>
+                        <p>English</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">
+                                65%</div>
+                        </div>
+                        <br>
+                    </div>
+                </div><br>
+
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="w3-twothird">
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Portfolio
+                    </h2>
+                    <div class="w3-container">
+                        <div class="w3-section w3-bottombar w3-padding-16">
+                            <button class="w3-button w3-black">ALL</button>
+                            <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Web</button>
+                            <button class="w3-button w3-white w3-hide-small"><i
+                                    class="fa fa-photo w3-margin-right"></i>Mobile</button>
+                            <button class="w3-button w3-white w3-hide-small"><i
+                                    class="fa fa-map-pin w3-margin-right"></i>Game</button>
+                            <button class="w3-button w3-white w3-hide-small"><i
+                                    class="fa fa-map-pin w3-margin-right"></i>Library</button>
+                        </div>
+                    </div>
+                    <!-- First Photo Grid-->
+                    <div class="w3-row-padding">
+                        <div class="w3-third w3-container w3-margin-bottom">
+                            <img src="/w3images/mountains.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                            <div class="w3-container w3-white">
+                                <p><b>Lorem Ipsum</b></p>
+                                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                                    vitae,
+                                    ultricies congue gravida diam non fringilla.</p>
+                            </div>
+                        </div>
+                        <div class="w3-third w3-container w3-margin-bottom">
+                            <img src="/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                            <div class="w3-container w3-white">
+                                <p><b>Lorem Ipsum</b></p>
+                                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                                    vitae,
+                                    ultricies congue gravida diam non fringilla.</p>
+                            </div>
+                        </div>
+                        <div class="w3-third w3-container">
+                            <img src="/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                            <div class="w3-container w3-white">
+                                <p><b>Lorem Ipsum</b></p>
+                                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                                    vitae,
+                                    ultricies congue gravida diam non fringilla.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Photo Grid-->
+                    <div class="w3-row-padding">
+                        <div class="w3-third w3-container w3-margin-bottom">
+                            <img src="/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                            <div class="w3-container w3-white">
+                                <p><b>Lorem Ipsum</b></p>
+                                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                                    vitae,
+                                    ultricies congue gravida diam non fringilla.</p>
+                            </div>
+                        </div>
+                        <div class="w3-third w3-container w3-margin-bottom">
+                            <img src="/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                            <div class="w3-container w3-white">
+                                <p><b>Lorem Ipsum</b></p>
+                                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                                    vitae,
+                                    ultricies congue gravida diam non fringilla.</p>
+                            </div>
+                        </div>
+                        <div class="w3-third w3-container">
+                            <img src="/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                            <div class="w3-container w3-white">
+                                <p><b>Lorem Ipsum</b></p>
+                                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                                    vitae,
+                                    ultricies congue gravida diam non fringilla.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="w3-center w3-padding-32">
+                        <div class="w3-bar">
+                            <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                            <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                            <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                            <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                            <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                            <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience
+                    </h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span
+                                class="w3-tag w3-teal w3-round">Current</span></h6>
+                        <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est
+                            reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure,
+                            iste.</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014
+                        </h6>
+                        <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est
+                            reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure,
+                            iste.</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-card w3-white">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+                        <p>Web Development! All I need to know in one place</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>London Business School</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+                        <p>Master Degree</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>School of Coding</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+                        <p>Bachelor Degree</p><br>
+                    </div>
+                </div>
+
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Page Container -->
+    </div>
+
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+        <p>Find me on social media.</p>
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+    <script type="text/javascript">
+        const languagesDiv = document.getElementById("lang-selection");
+        const sectionDiv = document.getElementById("section-selection");
+        const librariesDiv = document.getElementById("libraries");
+        Object.keys(pl).forEach((key) => {
+            const btn = document.createElement("buton");
+            btn.className = "w3-bar-item w3-button";
+            btn.innerText = key
+            btn.id = "lang-" + key
+            btn.onclick = () => {
+                changeLanguage(key, btn)
+            }
+            languagesDiv.appendChild(btn);
+            Object.keys(pl[`${key}`]).forEach((section) => {
+                const btn = document.createElement("buton");
+                btn.className = "w3-bar-item w3-button";
+                btn.innerText = section
+                btn.id = key + "-section-" + section
+                btn.onclick = () => {
+                    changeSection(key, section);
+                }
+                sectionDiv.appendChild(btn);
+                pl[`${key}`][`${section}`].forEach(sec => {
+                    const p = document.createElement("p");
+                    p.id = key + "-p-" + section;
+                    p.innerHTML = sec.name;
+                    librariesDiv.appendChild(p);
+                    const outerDiv = document.createElement("div");
+                    outerDiv.id = key + "-outer-" + section;
+                    outerDiv.className = "w3-light-grey w3-round-xlarge w3-small";
+                    librariesDiv.appendChild(outerDiv);
+                    const innerDiv = document.createElement("div");
+                    innerDiv.className = "w3-container w3-center w3-round-xlarge w3-teal";
+                    innerDiv.style.width = sec.ratio + "%";
+                    innerDiv.innerText = sec.ratio + "%";
+                    innerDiv.id = key + "-inner-" + section;
+                    outerDiv.appendChild(innerDiv);
+                })
+            })
+        })
+        const changeLanguage = (lang) => {
+            const languagesDiv = document.getElementById("lang-selection");
+            const sectionDiv = document.getElementById("section-selection");
+            const btn = document.getElementById("lang-" + lang)
+            Array.from(languagesDiv.children).forEach(lc => {
+                lc.className = lc.className.replace("w3-teal", "");
+            })
+            btn.className += " w3-teal";
+
+            Array.from(sectionDiv.children).forEach(child => {
+                if (!child.id.includes(lang)) {
+                    child.style.display = "none";
+                }
+                else {
+                    child.style.display = "block";
+                }
+            })
+            changeSection(lang, Object.keys(pl[`${lang}`])[0]);
+        }
+        const changeSection = (lang, section) => {
+            const sectionDiv = document.getElementById("section-selection");
+            const librariesDiv = document.getElementById("libraries");
+            const btn = document.getElementById(lang + "-section-" + section);
+            Array.from(sectionDiv.children).forEach(lc => {
+                lc.className = lc.className.replace("w3-teal", "");
+            })
+            btn.className += " w3-teal";
+            Array.from(librariesDiv.children).forEach(child => {
+                if (child.id.includes(lang) && child.id.includes(section)) {
+                    child.style.display = "block";
+                }
+                else {
+                    child.style.display = "none";
+                }
+            })
+
+        }
+        changeLanguage("python");
+        // changeSection("python", "backend");
+    </script>
+
 </body>
 
 </html>
