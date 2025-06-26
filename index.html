@@ -448,13 +448,13 @@
             container.appendChild(cell);
             if (obj.mediaType === "image") {
                 const img = document.createElement("img");
-                img.src = obj.media;
+                img.src = obj.src;
                 img.alt = obj.name + "-image";
                 img.style.width = "100%";
                 img.style.height = "auto";
                 img.className = "w3-hover-opacity";
                 img.onclick = () => {
-                    openLargeImage(obj.media);
+                    openLargeImage(obj.src);
                 }
                 cell.appendChild(img);
             }
