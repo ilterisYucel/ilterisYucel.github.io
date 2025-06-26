@@ -25,6 +25,10 @@ const pl = {
         name: "Sanic",
         ratio: "65",
       },
+      {
+        name: "Odoo",
+        ratio: "70",
+      },
     ],
     gui: [
       {
