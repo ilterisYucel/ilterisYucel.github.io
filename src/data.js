@@ -240,4 +240,12 @@ const project = [
     src: "./assets/img/shapetris.png",
     tags: ["mobile", "game", "web"],
   },
+  {
+    name: "Imay BI",
+    description:
+      "Imay BI is a business management and smart application that can be used on mobile, desktop and web platforms. It was developed for Imay Elevator Ltd. ",
+    mediaType: "image",
+    src: "./assets/img/imay.png",
+    tags: ["mobile", "desktop", "web"],
+  },
 ];
