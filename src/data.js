@@ -252,4 +252,12 @@ const project = [
     src: "./assets/img/imay.png",
     tags: ["mobile", "desktop", "web"],
   },
+  {
+    name: "Vinci Route Planner",
+    description:
+      "Vinci Route Planner is a route planning application that food resellers can use to plan their routes and deliveries. It was developed with React Native.",
+    mediaType: "image",
+    src: "./assets/img/vinci.png",
+    tags: ["mobile"],
+  },
 ];
